@@ -1,5 +1,5 @@
 # chat2api-plus
-**chat2api-plus** 用于将 Web 端的 ChatGPT 对话接口转换为标准的 OpenAI API 格式。本程序支持官网所有模型(会持续更新)，包括免登录的 GPT-3.5、GPT-4、GPT-4-all、GPTS 和 GPT-4o。本项目配备了易于使用的管理仪表板，包括渠道管理、可视化数据显示以及批量添加或修改账户的功能。
+**chat2api-plus** 用于将 Web 端的 ChatGPT 对话接口转换为标准的 OpenAI API 格式。本程序支持官网所有模型(会持续更新)，包括 GPT-3.5、GPT-4、GPT-4-all、GPTS， GPT-4o, GPT-4o-mini 和 dalle画图模型。本项目配备了易于使用的管理仪表板，包括渠道管理、可视化数据显示以及批量添加或修改账户的功能。
 
 **重要提示**：运行此项目需要授权。目前可联系项目组进行试用。
 
@@ -7,15 +7,14 @@
 
 ## 特性
 - **无门槛**：无需手动登录获取 access token，直接填入账号密码即可使用。
-- **批量导入**：支持轻松导入各种格式的账号列表。
+- **批量导入导出**：支持轻松导入导出各种格式的账号列表并且批量添加标签，易于管理。
 - **渠道管理**：一键启用/禁用渠道。
 - **均衡负载**：通过权重和优先级的双重控制，灵活分配账号使用次数。
 - **人性化设计**：支持筛选和搜索账号，可查看每个账号在每个模型上的调用次数和官网订阅到期时间。
 - **高度可靠**：内置自动重试机制和账号冷却功能，最小化错误率。
-- **自动化操作**：定时自动更新账号状态，清理过期/异常账号。
+- **自动化操作**：定时自动更新账号状态，每日自动清理过期/异常账号。
 - **数据可视化**：清晰展示所有 API 调用数据及账号池的实时状态。
-
-你可以将支持的模型列表添加到README中的一个新部分，如下所示：
+- **自动继续对话**：一次性输出超长的响应回复，突破逆向的限制
 
 
 ## 支持的模型列表(持续更新)
@@ -27,16 +26,16 @@
 - `gpt-4`: 正常的gpt-4，模拟api，不支持联网等功能。
 - `gpt-4-all`: GPT-4的全功能版本，支持图像、文件输入，支持调用联网插件，代码解释器，画图等全部官网功能。
 - `gpt-4o`: 最新发布的GPT-4o模型，由plus或者team号调用。
+- `gpt-4o-mini`: 最新发布的GPT-4o-mini模型，最有性价比的模型，由普号调用。
 - `gpt-4-gizmo-*`: 匹配传入的gpts的gizmo id，调用所有gpts。
+- `dall-e-3`: 官网画图模型，可定制尺寸，生成高质量画面。
 
 
 
 ## 界面截图
-<img width="1280" alt="4a45d5f2fe3a3ac6e5def2ef24d1a38" src="https://github.com/realnoob007/chat2api-plus/assets/87698941/2e40a882-c9d0-4aab-9334-e9bf9a5395a0">
-<img width="1280" alt="0ce2e822f1a8f8004171d3d9a3c86cf" src="https://github.com/realnoob007/chat2api-plus/assets/87698941/6eac028d-2980-41fa-8cb9-0ff34eb0e925">
-<img width="1280" alt="38ea5ab9bd3d2a7ecd8e1af457b2bde" src="https://github.com/realnoob007/chat2api-plus/assets/87698941/aa52c574-c39b-4e3f-99e4-b0d6e4bf4266">
-
-下面是完成README文件中“部署”部分的一个示例。你可以根据你的项目特点和配置需要进行调整：
+<img width="1280" alt="893e84c37f8b211e65a5a0c78ea4e1a" src="https://github.com/user-attachments/assets/970ec612-a2fb-4012-b032-88d1a7166bce">
+<img width="1280" alt="828be1ed65ffd9642f6494878683bd9" src="https://github.com/user-attachments/assets/d98fb3be-1994-4229-b14e-4d11e7e59a5d">
+<img width="1280" alt="2738c275edc33000fae4273dc17dc2b" src="https://github.com/user-attachments/assets/2faf0b1a-c599-449e-9228-d218563a9c11">
 
 ---
 
