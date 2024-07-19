@@ -33,6 +33,7 @@ ModelConvert:
     "gpt-4-gizmo-g-YyyyMT9XH": "gpt-4,gpt-4-*"
     "gpt-4": "1|gpt-4-vision-preview,gpt-4-all" #优先级逻辑：如果同时存在gpt-4-*和gpt-4-gizmo-*，会产生匹配冲突，默认会匹配后者，所以如果有冲突需要手动设置优先级比如1|, 2|, 3|以此类推
     "gpt-4o": "gpt-4o,gpt-4o-2024-05-13"
+    "gpt-4o-mini": "gpt-4o-mini,gpt-4o-2024-05-13"
 
 #程序使用授权码，请联系作者获取
 LICENCE: "授权码"
@@ -44,6 +45,8 @@ EnableFree35 : false
 EnableWeight: true
 #是否启用工具调用痕迹
 EnableToolText: true
+#最大自动连续对话次数
+MaxContinueCount: 3
 # 网关地址
 API_SERVER: "你的网关地址"
 # 网关访问密码
