@@ -47,6 +47,15 @@ EnableWeight: true
 EnableToolText: true
 #最大自动连续对话次数
 MaxContinueCount: 3
+#重试自定义配置
+EnableRetry: true
+RetryHttpCodeList:
+    - 401
+    - 502
+    - 500
+    - 403
+    - 404
+MaxRetryCount: 3 #最多会重试三次
 # 网关地址
 API_SERVER: "你的网关地址"
 # 网关访问密码
